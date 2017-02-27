@@ -1,8 +1,5 @@
 /**
  * Created by sury on 2017/2/7.
- * http://www.tuicool.com/articles/q636fy3
- * yarn run webpack
- * yarn run webpack-dev-server
  */
 const path = require('path');
 const webpack = require('webpack');
@@ -32,12 +29,6 @@ function getEntry() {
 module.exports = {
     devtool: "inline-source-map",
     context: path.resolve(__dirname, './src'),
-   /* entry: {
-     //src: ['./home.js', './events.js', './vendor.js'],
-     "index": './page.js',
-     "home": './home.js',
-     "vendor": ['react', 'react-dom', 'react-router', 'classnames']
-     },*/
    entry: getEntry(),
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -123,7 +114,6 @@ module.exports = {
     ],
     devServer: {
         contentBase: path.resolve(__dirname, './dist'),  // New
-        //host: '192.168.90.225',
         host: 'localhost',
         port: 9090,
         inline: true,//设置为true，当源文件改变时会自动刷新页面
