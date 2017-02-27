@@ -1,0 +1,17 @@
+$fontStack:    Helvetica, sans-serif;
+$primaryColor: #333;
+
+$red: red;
+
+$blue : blue;
+
+body {
+  font-family: $fontStack;
+  color: $primaryColor;
+}
+
+
+#shopList{
+  border-bottom-color: $red;
+  background-color: $blue;
+}
